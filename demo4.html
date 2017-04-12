@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<head>
+		<title>vr demo</title>
+		<script src="https://aframe.io/releases/latest/aframe.js"></script>
+</head>
+<body>
+		<a-scene>
+				<!-- アニメーション　回転 -->
+				<a-cube width="10" height="10" depth="10" position="142 58.5 -560">
+					<!-- <a-animation attribute="rotation" from="0 0 0" to="0 360 0" repeat="indefinite" easing="linear" begin="mouseenter"></a-animation> -->
+				</a-cube>
+
+				<a-sky color="rgb(144, 159, 255)"></a-sky>
+
+<!-- 画像挿入 -->
+				<a-image src="img/sato1.jpg" position="-314 65 -560" height="19" width="14" rotation="0 0 20">
+					<a-mouseenter position="-314 65 -555" height="19" width="28" src="img/sato3.jpg"></a-mouseenter>
+					<a-mouseleave height="19" width="14" src="img/sato1.jpg"></a-mouseleave>
+				</a-image>
+
+					<!-- <a-animation attribute="rotation" from="0 0 0" to="0 360 0" repeat="indefinite" easing="ease"></a-animation> -->
+
+				<!-- </a-lot-of-img> -->
+
+
+<!--室内のテーブル temple-->
+				<template is="a-template" element="a-lot-of-tables">
+					<a-cube width="70" height="40" depth="1" color="rgb(209, 125, 84)" rotation="90 0 0" position="0 49 -100"></a-cube><!--机-->
+					<a-cube width="45" height="4" depth="2" color="rgb(209, 125, 84)" rotation="0 90 90" position="-33 27 -117"></a-cube><!--左後-->
+					<a-cube width="45" height="4" depth="2" color="rgb(209, 125, 84)" rotation="0 90 90" position="-33 27 -83"></a-cube><!--左前-->
+					<a-cube width="45" height="4" depth="2" color="rgb(209, 125, 84)" rotation="0 90 90" position="33 27 -117"></a-cube><!--右後-->
+					<a-cube width="45" height="4" depth="2" color="rgb(209, 125, 84)" rotation="0 90 90" position="33 27 -83"></a-cube><!--右前-->
+				</template>
+
+<!--窓 temple-->
+				<template is="a-template" element="a-lot-of-window">
+							<a-cube width="2" height="1" depth="250" color="rgb(120, 50, 28)" position="0 140 0"></a-cube><!--上-->
+							<a-cube width="10" height="1" depth="250" color="rgb(120, 50, 28)" position="-4 50 0"></a-cube><!--下-->
+							<a-cube width="10" height="100" depth="1" color="rgb(120, 50, 28)" position="-4 100 124.5"></a-cube><!--左-->
+							<a-cube width="10" height="100" depth="1" color="rgb(120, 50, 28)" position="-4 100 -124.5"></a-cube><!--右-->
+				</template>
+
+<!--室内の棚（箱１つ） temple-->
+				<!-- <template is="a-template" element="a-lot-of-block"> -->
+					<!-- <a-cube width="25" height="1" depth="18" color="rgb(209, 125, 84)" rotation="0 0 0" position="10 29 0"></a-cube>上-->
+					<!-- <a-cube width="25" height="1" depth="18" color="rgb(209, 125, 84)" rotation="0 0 90" position="-2 17 0"></a-cube>左-->
+					<!-- <a-cube width="25" height="1" depth="18" color="rgb(209, 125, 84)" rotation="0 0 90" position="22 17 0"></a-cube>右-->
+					<!-- <a-cube width="25" height="1" depth="18" color="rgb(209, 125, 84)" rotation="0 0 0" position="10 5.5 0"></a-cube>下-->
+				<!-- </template> -->
+
+<!--室内の棚２列 temple-->
+			<template is="a-template" element="a-lot-of-slack2">
+			<!--左-->
+					<a-cube width="25" height="1" depth="18" color="rgb(209, 125, 84)" rotation="0 0 0" position="0 125 -565"></a-cube><!--上-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="-12 113 -565"></a-cube><!--左-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="12 113 -565"></a-cube><!--右-->
+
+					<a-cube width="25" height="1" depth="18" color="rgb(209, 125, 84)" rotation="0 0 0" position="0 101 -565"></a-cube><!--上-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="-12 89 -565"></a-cube><!--左-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="12 89 -565"></a-cube><!--右-->
+
+					<a-cube width="25" height="1" depth="18" color="rgb(209, 125, 84)" rotation="0 0 0" position="0 77 -565"></a-cube><!--上-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="-12 65 -565"></a-cube><!--左-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="12 65 -565"></a-cube><!--右-->
+
+					<a-cube width="25" height="1" depth="18" color="rgb(209, 125, 84)" rotation="0 0 0" position="0 53 -565"></a-cube><!--上-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="-12 41 -565"></a-cube><!--左-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="12 41 -565"></a-cube><!--右-->
+
+					<a-cube width="25" height="1" depth="18" color="rgb(209, 125, 84)" rotation="0 0 0" position="0 29 -565"></a-cube><!--上-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="-12 17 -565"></a-cube><!--左-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="12 17 -565"></a-cube><!--右-->
+					<a-cube width="25" height="1" depth="18" color="rgb(209, 125, 84)" rotation="0 0 0" position="0 5 -565"></a-cube><!--下-->
+			<!--右-->
+					<a-cube width="25" height="1" depth="18" color="rgb(209, 125, 84)" rotation="0 0 0" position="-24 125 -565"></a-cube><!--上-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="-36 113 -565"></a-cube><!--左-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="-12 113 -565"></a-cube><!--右-->
+
+					<a-cube width="25" height="1" depth="18" color="rgb(209, 125, 84)" rotation="0 0 0" position="-24 101 -565"></a-cube><!--上-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="-36 89 -565"></a-cube><!--左-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="-12 89 -565"></a-cube><!--右-->
+
+					<a-cube width="25" height="1" depth="18" color="rgb(209, 125, 84)" rotation="0 0 0" position="-24 77 -565"></a-cube><!--上-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="-36 65 -565"></a-cube><!--左-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="-12 65 -565"></a-cube><!--右-->
+
+					<a-cube width="25" height="1" depth="18" color="rgb(209, 125, 84)" rotation="0 0 0" position="-24 53 -565"></a-cube><!--上-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="-36 41 -565"></a-cube><!--左-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="-12 41 -565"></a-cube><!--右-->
+
+					<a-cube width="25" height="1" depth="18" color="rgb(209, 125, 84)" rotation="0 0 0" position="-24 29 -565"></a-cube><!--上-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="-36 17 -565"></a-cube><!--左-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="-12 17 -565"></a-cube><!--右-->
+					<a-cube width="25" height="1" depth="18" color="rgb(209, 125, 84)" rotation="0 0 0" position="-24 5 -565"></a-cube><!--下-->
+			</template>
+
+<!--室内の棚３列 temple-->
+			<template is="a-template" element="a-lot-of-slack3">
+			<!--中-->
+					<a-cube width="25" height="1" depth="18" color="rgb(209, 125, 84)" rotation="0 0 0" position="0 125 -565"></a-cube><!--上-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="-12 113 -565"></a-cube><!--左-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="12 113 -565"></a-cube><!--右-->
+
+					<a-cube width="25" height="1" depth="18" color="rgb(209, 125, 84)" rotation="0 0 0" position="0 101 -565"></a-cube><!--上-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="-12 89 -565"></a-cube><!--左-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="12 89 -565"></a-cube><!--右-->
+
+					<a-cube width="25" height="1" depth="18" color="rgb(209, 125, 84)" rotation="0 0 0" position="0 77 -565"></a-cube><!--上-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="-12 65 -565"></a-cube><!--左-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="12 65 -565"></a-cube><!--右-->
+
+					<a-cube width="25" height="1" depth="18" color="rgb(209, 125, 84)" rotation="0 0 0" position="0 53 -565"></a-cube><!--上-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="-12 41 -565"></a-cube><!--左-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="12 41 -565"></a-cube><!--右-->
+
+					<a-cube width="25" height="1" depth="18" color="rgb(209, 125, 84)" rotation="0 0 0" position="0 29 -565"></a-cube><!--上-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="-12 17 -565"></a-cube><!--左-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="12 17 -565"></a-cube><!--右-->
+					<a-cube width="25" height="1" depth="18" color="rgb(209, 125, 84)" rotation="0 0 0" position="0 5 -565"></a-cube><!--下-->
+			<!--左-->
+					<a-cube width="25" height="1" depth="18" color="rgb(209, 125, 84)" rotation="0 0 0" position="-24 125 -565"></a-cube><!--上-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="-36 113 -565"></a-cube><!--左-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="-12 113 -565"></a-cube><!--右-->
+
+					<a-cube width="25" height="1" depth="18" color="rgb(209, 125, 84)" rotation="0 0 0" position="-24 101 -565"></a-cube><!--上-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="-36 89 -565"></a-cube><!--左-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="-12 89 -565"></a-cube><!--右-->
+
+					<a-cube width="25" height="1" depth="18" color="rgb(209, 125, 84)" rotation="0 0 0" position="-24 77 -565"></a-cube><!--上-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="-36 65 -565"></a-cube><!--左-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="-12 65 -565"></a-cube><!--右-->
+
+					<a-cube width="25" height="1" depth="18" color="rgb(209, 125, 84)" rotation="0 0 0" position="-24 53 -565"></a-cube><!--上-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="-36 41 -565"></a-cube><!--左-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="-12 41 -565"></a-cube><!--右-->
+
+					<a-cube width="25" height="1" depth="18" color="rgb(209, 125, 84)" rotation="0 0 0" position="-24 29 -565"></a-cube><!--上-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="-36 17 -565"></a-cube><!--左-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="-12 17 -565"></a-cube><!--右-->
+					<a-cube width="25" height="1" depth="18" color="rgb(209, 125, 84)" rotation="0 0 0" position="-24 5 -565"></a-cube><!--下-->
+			<!--右-->
+					<a-cube width="25" height="1" depth="18" color="rgb(209, 125, 84)" rotation="0 0 0" position="24 125 -565"></a-cube><!--上-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="12 113 -565"></a-cube><!--左-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="36 113 -565"></a-cube><!--右-->
+
+					<a-cube width="25" height="1" depth="18" color="rgb(209, 125, 84)" rotation="0 0 0" position="24 101 -565"></a-cube><!--上-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="12 89 -565"></a-cube><!--左-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="36 89 -565"></a-cube><!--右-->
+
+					<a-cube width="25" height="1" depth="18" color="rgb(209, 125, 84)" rotation="0 0 0" position="24 77 -565"></a-cube><!--上-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="12 65 -565"></a-cube><!--左-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="36 65 -565"></a-cube><!--右-->
+
+					<a-cube width="25" height="1" depth="18" color="rgb(209, 125, 84)" rotation="0 0 0" position="24 53 -565"></a-cube><!--上-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="12 41 -565"></a-cube><!--左-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="36 41 -565"></a-cube><!--右-->
+
+					<a-cube width="25" height="1" depth="18" color="rgb(209, 125, 84)" rotation="0 0 0" position="24 29 -565"></a-cube><!--上-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="12 17 -565"></a-cube><!--左-->
+					<a-cube width="25" height="1" depth="18.5" color="rgb(209, 125, 84)" rotation="0 0 90" position="36 17 -565"></a-cube><!--右-->
+					<a-cube width="25" height="1" depth="18" color="rgb(209, 125, 84)" rotation="0 0 0" position="24 5 -565"></a-cube><!--下-->
+			</template>
+
+<!--天井-->
+				<a-cube width="1100" height="10" depth="1150" color="#EEEEEE" position="0 145 0"></a-cube>
+
+<!--床-->
+				<a-cube width="400" height="10" depth="1150" color="#AAAAAA" position="0 0 0"></a-cube><!--真ん中-->
+				<a-cube width="350" height="10" depth="1150" color="#333333" position="375 0 0"></a-cube><!--右-->
+				<a-cube width="350" height="10" depth="1150" color="#333333" position="-375 0 0"></a-cube><!--左-->
+
+<!--側面の壁-->
+				<a-cube width="1100" height="145" depth="0.1" color="#FFFFFF" position="0 77.5 -575"></a-cube><!--正面-->
+				<a-cube width="1100" height="145" depth="0.1" color="#FFFFFF" position="0 77.5 575" rotation="0 180 0"></a-cube><!--後-->
+
+				<!--右-->
+				<a-cube width="40" height="90" depth="0.1" color="#FFFFFF" position="550 95 -555" rotation="0 90 0"></a-cube><!--奥-->
+				<a-cube width="50" height="90" depth="0.1" color="#FFFFFF" position="550 95 -260" rotation="0 90 0"></a-cube><!--窓横-->
+				<a-cube width="50" height="90" depth="0.1" color="#FFFFFF" position="550 95 40" rotation="0 90 0"></a-cube><!--窓横-->
+				<a-cube width="50" height="90" depth="0.1" color="#FFFFFF" position="550 95 340" rotation="0 90 0"></a-cube><!--窓横-->
+				<a-cube width="1150" height="50" depth="0.1" color="#FFFFFF" position="550 25 0" rotation="0 90 0"></a-cube><!--下-->
+
+				<!--左-->
+				<a-cube width="40" height="90" depth="0.1" color="#FFFFFF" position="-550 95 -555" rotation="0 90 0"></a-cube><!--奥-->
+				<a-cube width="50" height="90" depth="0.1" color="#FFFFFF" position="-550 95 -260" rotation="0 90 0"></a-cube><!--窓横-->
+				<a-cube width="50" height="90" depth="0.1" color="#FFFFFF" position="-550 95 40" rotation="0 90 0"></a-cube><!--窓横-->
+				<a-cube width="50" height="90" depth="0.1" color="#FFFFFF" position="-550 95 340" rotation="0 90 0"></a-cube><!--窓横-->
+				<a-cube width="1150" height="50" depth="0.1" color="#FFFFFF" position="-550 25 0" rotation="0 90 0"></a-cube><!--下-->
+
+<!--窓-->
+				<!--左-->
+				<a-lot-of-window position="-550 0 -410"></a-lot-of-window>
+				<a-lot-of-window position="-550 0 -110"></a-lot-of-window>
+				<a-lot-of-window position="-550 0 190"></a-lot-of-window>
+				<a-lot-of-window position="-550 0 490"></a-lot-of-window>
+
+				<!--ガラス-->
+				<a-cube width="1" height="100" depth="250" color="#FFFFFF" opacity="0.8" position="-560 100 -410"></a-cube>
+				<a-cube width="1" height="100" depth="250" color="#FFFFFF" opacity="0.8" position="-560 100 -110"></a-cube>
+				<a-cube width="1" height="100" depth="250" color="#FFFFFF" opacity="0.8" position="-560 100 190"></a-cube>
+				<a-cube width="1" height="100" depth="250" color="#FFFFFF" opacity="0.8" position="-560 100 490"></a-cube>
+
+				<!--右-->
+				<a-lot-of-window position="550 0 -410" rotation="0 180 0"></a-lot-of-window>
+				<a-lot-of-window position="550 0 -110" rotation="0 180 0"></a-lot-of-window>
+				<a-lot-of-window position="550 0 190" rotation="0 180 0"></a-lot-of-window>
+				<a-lot-of-window position="550 0 490" rotation="0 180 0"></a-lot-of-window>
+
+				<!--ガラス-->
+				<a-cube width="1" height="100" depth="250" color="#FFFFFF" opacity="0.8" position="560 100 -410"></a-cube>
+				<a-cube width="1" height="100" depth="250" color="#FFFFFF" opacity="0.8" position="560 100 -110"></a-cube>
+				<a-cube width="1" height="100" depth="250" color="#FFFFFF" opacity="0.8" position="560 100 190"></a-cube>
+				<a-cube width="1" height="100" depth="250" color="#FFFFFF" opacity="0.8" position="560 100 490"></a-cube>
+
+<!--柱-->
+		<!--左-->
+				<a-cube width="40" height="145" depth="40" color="#DDDDDD" position="-180 77.5 -565"></a-cube>
+				<a-cube width="40" height="145" depth="40" color="#DDDDDD" position="-180 77.5 -275"></a-cube>
+				<a-cube width="40" height="145" depth="40" color="#DDDDDD" position="-180 77.5 15"></a-cube>
+
+		<!--右-->
+				<a-cube width="40" height="145" depth="40" color="#DDDDDD" position="180 77.5 -565"></a-cube>
+				<a-cube width="40" height="145" depth="40" color="#DDDDDD" position="180 77.5 -275"></a-cube>
+				<a-cube width="40" height="145" depth="40" color="#DDDDDD" position="180 77.5 15"></a-cube>
+
+<!--扉-->
+		<!--正面-->
+				<a-cube width="51" height="115" depth="1" color="#DDDDDD" position="25 65 -567.5"></a-cube><!--右扉-->
+				<a-cube width="51" height="115" depth="1" color="#DDDDDD" position="-25 65 -567.5"></a-cube><!--左扉-->
+
+				<!--扉のフレーム-->
+				<a-cube width="1" height="113" depth="1" color="#CCCCCC" position="0 64 -567"></a-cube><!--真ん中の出っ張り-->
+				<a-cube width="0.5" height="113" depth="1" color="#444444" position="49.5 64 -567.5"></a-cube><!--右-->
+				<a-cube width="0.5" height="113" depth="1" color="#444444" position="-49.5 64 -567.5"></a-cube><!--左-->
+				<a-cube width="0.5" height="99.5" depth="1" color="#444444" position="0 120.5 -567.5" rotation="0 0 90"></a-cube><!--上-->
+
+
+
+<!-- 後ろの棚 -->
+		<!--左-->
+				<a-lot-of-slack3 position="-510 0 0"></a-lot-of-slack3>
+				<a-lot-of-slack3 position="-436.5 0 0"></a-lot-of-slack3>
+				<a-lot-of-slack2 position="-363 0 0"></a-lot-of-slack2>
+				<a-lot-of-slack2 position="-313.5 0 0"></a-lot-of-slack2>
+				<a-lot-of-slack2 position="-264 0 0"></a-lot-of-slack2>
+				<a-lot-of-slack2 position="-215.5 0 0"></a-lot-of-slack2>
+				<!--柱を挟んで-->
+				<a-lot-of-slack2 position="-120 0 0"></a-lot-of-slack2>
+				<a-lot-of-slack2 position="-71 0 0"></a-lot-of-slack2>
+
+				<a-lot-of-slack2 position="95 0 0"></a-lot-of-slack2>
+				<a-lot-of-slack2 position="144 0 0"></a-lot-of-slack2>
+
+
+<!--テーブル左-->
+	<!--１列目-->
+				<a-lot-of-tables position="-302 0 -350"></a-lot-of-tables>
+				<a-lot-of-tables position="-373 0 -350"></a-lot-of-tables>
+				<a-lot-of-tables position="-444 0 -350"></a-lot-of-tables>
+				<a-lot-of-tables position="-515 0 -350"></a-lot-of-tables>
+
+				<a-lot-of-tables position="-302 0 -309"></a-lot-of-tables>
+				<a-lot-of-tables position="-373 0 -309"></a-lot-of-tables>
+				<a-lot-of-tables position="-444 0 -309"></a-lot-of-tables>
+				<a-lot-of-tables position="-515 0 -309"></a-lot-of-tables>
+
+	<!--２列目-->
+				<a-lot-of-tables position="-302 0 -190"></a-lot-of-tables>
+				<a-lot-of-tables position="-373 0 -190"></a-lot-of-tables>
+				<a-lot-of-tables position="-444 0 -190"></a-lot-of-tables>
+				<a-lot-of-tables position="-515 0 -190"></a-lot-of-tables>
+
+				<a-lot-of-tables position="-302 0 -149"></a-lot-of-tables>
+				<a-lot-of-tables position="-373 0 -149"></a-lot-of-tables>
+				<a-lot-of-tables position="-444 0 -149"></a-lot-of-tables>
+				<a-lot-of-tables position="-515 0 -149"></a-lot-of-tables>
+
+	<!--３列目-->
+				<a-lot-of-tables position="-302 0 -30"></a-lot-of-tables>
+				<a-lot-of-tables position="-373 0 -30"></a-lot-of-tables>
+				<a-lot-of-tables position="-444 0 -30"></a-lot-of-tables>
+				<a-lot-of-tables position="-515 0 -30"></a-lot-of-tables>
+
+				<a-lot-of-tables position="-302 0 11"></a-lot-of-tables>
+				<a-lot-of-tables position="-373 0 11"></a-lot-of-tables>
+				<a-lot-of-tables position="-444 0 11"></a-lot-of-tables>
+				<a-lot-of-tables position="-515 0 11"></a-lot-of-tables>
+
+	<!--４列目-->
+				<a-lot-of-tables position="-302 0 130"></a-lot-of-tables>
+				<a-lot-of-tables position="-373 0 130"></a-lot-of-tables>
+				<a-lot-of-tables position="-444 0 130"></a-lot-of-tables>
+				<a-lot-of-tables position="-515 0 130"></a-lot-of-tables>
+
+				<a-lot-of-tables position="-302 0 171"></a-lot-of-tables>
+				<a-lot-of-tables position="-373 0 171"></a-lot-of-tables>
+				<a-lot-of-tables position="-444 0 171"></a-lot-of-tables>
+				<a-lot-of-tables position="-515 0 171"></a-lot-of-tables>
+
+	<!--５列目-->
+				<a-lot-of-tables position="-302 0 290"></a-lot-of-tables>
+				<a-lot-of-tables position="-373 0 290"></a-lot-of-tables>
+				<a-lot-of-tables position="-444 0 290"></a-lot-of-tables>
+				<a-lot-of-tables position="-515 0 290"></a-lot-of-tables>
+
+				<a-lot-of-tables position="-302 0 331"></a-lot-of-tables>
+				<a-lot-of-tables position="-373 0 331"></a-lot-of-tables>
+				<a-lot-of-tables position="-444 0 331"></a-lot-of-tables>
+				<a-lot-of-tables position="-515 0 331"></a-lot-of-tables>
+
+
+
+<!--テーブル右-->
+	<!--１列目-->
+				<a-lot-of-tables position="302 0 -350"></a-lot-of-tables>
+				<a-lot-of-tables position="373 0 -350"></a-lot-of-tables>
+				<a-lot-of-tables position="444 0 -350"></a-lot-of-tables>
+				<a-lot-of-tables position="515 0 -350"></a-lot-of-tables>
+
+				<a-lot-of-tables position="302 0 -309"></a-lot-of-tables>
+				<a-lot-of-tables position="373 0 -309"></a-lot-of-tables>
+				<a-lot-of-tables position="444 0 -309"></a-lot-of-tables>
+				<a-lot-of-tables position="515 0 -309"></a-lot-of-tables>
+
+	<!--２列目-->
+				<a-lot-of-tables position="302 0 -190"></a-lot-of-tables>
+				<a-lot-of-tables position="373 0 -190"></a-lot-of-tables>
+				<a-lot-of-tables position="444 0 -190"></a-lot-of-tables>
+				<a-lot-of-tables position="515 0 -190"></a-lot-of-tables>
+
+				<a-lot-of-tables position="302 0 -149"></a-lot-of-tables>
+				<a-lot-of-tables position="373 0 -149"></a-lot-of-tables>
+				<a-lot-of-tables position="444 0 -149"></a-lot-of-tables>
+				<a-lot-of-tables position="515 0 -149"></a-lot-of-tables>
+
+	<!--３列目-->
+				<a-lot-of-tables position="302 0 -30"></a-lot-of-tables>
+				<a-lot-of-tables position="373 0 -30"></a-lot-of-tables>
+				<a-lot-of-tables position="444 0 -30"></a-lot-of-tables>
+				<a-lot-of-tables position="515 0 -30"></a-lot-of-tables>
+
+				<a-lot-of-tables position="302 0 11"></a-lot-of-tables>
+				<a-lot-of-tables position="373 0 11"></a-lot-of-tables>
+				<a-lot-of-tables position="444 0 11"></a-lot-of-tables>
+				<a-lot-of-tables position="515 0 11"></a-lot-of-tables>
+
+	<!--４列目-->
+				<a-lot-of-tables position="302 0 130"></a-lot-of-tables>
+				<a-lot-of-tables position="373 0 130"></a-lot-of-tables>
+				<a-lot-of-tables position="444 0 130"></a-lot-of-tables>
+				<a-lot-of-tables position="515 0 130"></a-lot-of-tables>
+
+				<a-lot-of-tables position="302 0 171"></a-lot-of-tables>
+				<a-lot-of-tables position="373 0 171"></a-lot-of-tables>
+				<a-lot-of-tables position="444 0 171"></a-lot-of-tables>
+				<a-lot-of-tables position="515 0 171"></a-lot-of-tables>
+
+	<!--５列目-->
+				<a-lot-of-tables position="302 0 290"></a-lot-of-tables>
+				<a-lot-of-tables position="373 0 290"></a-lot-of-tables>
+				<a-lot-of-tables position="444 0 290"></a-lot-of-tables>
+				<a-lot-of-tables position="515 0 290"></a-lot-of-tables>
+
+				<a-lot-of-tables position="302 0 331"></a-lot-of-tables>
+				<a-lot-of-tables position="373 0 331"></a-lot-of-tables>
+				<a-lot-of-tables position="444 0 331"></a-lot-of-tables>
+				<a-lot-of-tables position="515 0 331"></a-lot-of-tables>
+
+<!--ソファー奥-->
+			<template is="a-template" element="a-lot-of-sofablack">
+							<a-cube width="120" height="19" depth="50" color="#333333" position="0 19 -360"></a-cube><!--クッション-->
+							 <!--鉄-->
+							<a-cylinder color="#BBBBBB" height="52.5" radius="0.5" position="-59.5 5.5 -359.5" rotation="90 0 0" material="metalness:1;roughness:1"></a-cylinder><!--左-->
+							<a-cylinder color="#BBBBBB" height="52.5" radius="0.5" position="59.5 5.5 -359.5" rotation="90 0 0" material="metalness:1;roughness:1"></a-cylinder><!--右--->
+							<a-cylinder color="#BBBBBB" height="119" radius="0.5" position="0 13 -333.5" rotation="0 0 90" material="metalness:1;roughness:1"></a-cylinder><!--手前-->
+							<a-cylinder color="#BBBBBB" height="8" radius="0.5" position="-59.5 9.5 -333.5" material="metalness:1;roughness:1"></a-cylinder><!--左前-->
+							<a-cylinder color="#BBBBBB" height="8" radius="0.5" position="59.5 9.5 -333.5" material="metalness:1;roughness:1"></a-cylinder><!--右前-->
+							<a-cylinder color="#BBBBBB" height="75" radius="0.5" position="-22.5 40.5 -386" rotation="0 0 90" material="metalness:1;roughness:1"></a-cylinder><!--奥上-->
+							<a-cylinder color="#BBBBBB" height="119" radius="0.5" position="0 13 -386" rotation="0 0 90" material="metalness:1;roughness:1"></a-cylinder><!--奥下-->
+							<a-cylinder color="#BBBBBB" height="35" radius="0.5" position="-59.5 23 -386" material="metalness:1;roughness:1"></a-cylinder><!--左奥-->
+							<a-cylinder color="#BBBBBB" height="8" radius="0.5" position="59.5 9.5 -386" material="metalness:1;roughness:1"></a-cylinder><!--右奥-->
+							<a-cylinder color="#BBBBBB" height="27.5" radius="0.5" position="14.5 26.5 -386" material="metalness:1;roughness:1"></a-cylinder><!--右奥上-->
+			</template>
+			<a-lot-of-sofablack position="0 0 0"></a-lot-of-sofablack>
+
+<!--カメラ-->
+				<a-camera
+					position="0 80 0"
+					active="true"
+					rotation
+					look-controls
+					wasd-controls="acceleration:1700"
+					cursor-visible="false"
+					cursor-scale="5"
+					cursor-color="#4CC3D9"
+					cursor-offset="6"
+					cursor-maxdistance="150"
+					cursor-opacity="0.5">
+				</a-camera>
+
+		</a-scene>
+</body>
